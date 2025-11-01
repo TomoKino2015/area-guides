@@ -1,3 +1,5 @@
+import createMDX from '@next/mdx'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
@@ -6,6 +8,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // MDX設定を追加
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 }
 
-export default nextConfig
+const withMDX = createMDX({
+  // MDXプラグインのオプション（必要に応じて追加）
+})
+
+export default withMDX(nextConfig)

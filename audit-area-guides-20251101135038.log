@@ -1,0 +1,91 @@
+=== AUDIT START: /Users/kinotomonari/claude_files/area-guides ===
+Node: v18.20.7
+PNPM: 10.14.0
+Git remote(s):
+origin	https://github.com/TomoKino2015/area-guides.git (fetch)
+origin	https://github.com/TomoKino2015/area-guides.git (push)
+
+=== package.json (抜粋) ===
+  "name": "my-v0-project",
+    "next": "15.2.4",
+    "react": "^19",
+    "zod": "3.25.76"
+    "@next/mdx": "^15.5.6",
+    "@types/mdx": "^2.0.13",
+    "typescript": "^5",
+    "yaml": "^2.8.1"
+
+=== next.config.* (先頭〜120行) ===
+--- next.config.mjs ---
+import createMDX from '@next/mdx'
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
+  },
+  // MDX設定を追加
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+}
+
+const withMDX = createMDX({
+  // MDXプラグインのオプション（必要に応じて追加）
+})
+
+export default withMDX(nextConfig)
+
+=== app ディレクトリ（最大 200 行） ===
+app/(marketing)/.DS_Store
+app/(marketing)/areas/shibuya/page.mdx
+app/.DS_Store
+app/[ward]/page.tsx
+app/[ward]/ward-page-client.tsx
+app/globals.css
+app/layout.tsx
+app/page.tsx
+
+=== content ディレクトリのYAML ===
+content/area/shibuya.yml
+
+=== 'shibuya' という名前の痕跡 ===
+app/(marketing)/areas/shibuya/page.mdx:3:# Shibuya Area Guide
+app/(marketing)/areas/shibuya/page.mdx:23:{/* Generated from content/area/shibuya.yml */}
+content/area/shibuya.yml:1:title: "Shibuya Area Guide"
+content/area/shibuya.yml:9:tags: ["shibuya","tokyo","living","commute-30m"]
+
+=== lib/content/area.schema.* の存在 ===
+-rw-r--r--  1 kinotomonari  staff  381 Nov  1 13:35 lib/content/area.schema.ts
+
+=== ランタイム想定の差異チェック（MDX有無） ===
+./pnpm-lock.yaml:      '@next/mdx':
+./pnpm-lock.yaml:  '@next/mdx@15.5.6':
+./pnpm-lock.yaml:  '@next/mdx@15.5.6(@mdx-js/loader@3.1.1)(@mdx-js/react@3.1.1(@types/react@19.2.2)(react@19.2.0))':
+./next.config.mjs:import createMDX from '@next/mdx'
+./audit-area-guides-20251101135038.log:    "@next/mdx": "^15.5.6",
+next.config.mjs:const withMDX = createMDX({
+next.config.mjs:export default withMDX(nextConfig)
+
+=== 代表YAMLの中身（見つかった最初の1つ、先頭〜120行） ===
+# content/area/shibuya.yml
+title: "Shibuya Area Guide"
+
+locale: "en"
+
+status: "Published"
+
+publishAt: "2025-11-01T00:00:00.000Z"
+
+tags: ["shibuya","tokyo","living","commute-30m"]
+
+faq:
+
+  - { q: "Is this area foreigner-friendly?", a: "Yes. Many buildings allow foreign tenants and English support is available via AtHearth." }
+
+  - { q: "Average rent range?", a: "1K from ¥110k+, 1LDK from ¥220k+ (indicative)." }
+
+
+=== AUDIT END ===
+ログファイル: audit-area-guides-20251101135038.log
