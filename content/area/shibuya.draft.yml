@@ -1,0 +1,47 @@
+# 拡張候補：既存 shibuya.yml に追加する項目のドラフト
+# 未確定値は null。公開前に既存ファイルとマージ判断。
+
+locales:
+  en:
+    title: "Shibuya Area Guide"
+    summary: null
+  ja:
+    title: "渋谷エリアガイド"
+    summary: null
+
+meta:
+  quarter: "2025-Q1"
+  updatedAt: null
+  status: "Draft"
+
+commute_times:
+  to_shinjuku:
+    local: null
+    express: null
+  to_shibuya:
+    local: null
+    express: null
+
+rent_by_type:
+  quarter: "2025-Q1"
+  types:
+    - type: "1R"
+      avg: null
+      sample_size: null
+    - type: "1K"
+      avg: null
+      sample_size: null
+    - type: "1LDK"
+      avg: null
+      sample_size: null
+
+cta:
+  primary:
+    text_en: "Check eligibility"
+    text_ja: "Readiness Check"
+    url: "/readiness"
+  secondary:
+    text_en: "Search by area"
+    text_ja: "エリアから探す"
+    url: "/areas"
+

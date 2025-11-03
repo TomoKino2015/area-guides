@@ -1,0 +1,69 @@
+{
+  "root": "/Users/kinotomonari/claude_files/area-guides",
+  "git": {
+    "branch": "save/working-20251101-1357",
+    "remote": "https://github.com/TomoKino2015/area-guides.git",
+    "dirty": true
+  },
+  "runtime": {
+    "node": "v18.20.7",
+    "pnpm": "10.14.0",
+    "next": "15.2.4"
+  },
+  "areas": [
+    {
+      "slug": "shibuya",
+      "status": "Published",
+      "languages": ["en"],
+      "has_mdx": true,
+      "yml_path": "content/area/shibuya.yml",
+      "mdx_path": "app/(marketing)/areas/shibuya/page.mdx",
+      "missing_keys": [
+        "locale (array)",
+        "title.en",
+        "title.ja",
+        "subtitle",
+        "rent_by_type.quarter",
+        "rent_by_type.1K",
+        "rent_by_type.1LDK",
+        "commute_times",
+        "subareas",
+        "overview.en",
+        "overview.ja",
+        "who_it_fits",
+        "schools_healthcare",
+        "parks",
+        "shopping_dining",
+        "events",
+        "cta.text.en",
+        "cta.text.ja",
+        "cta.url",
+        "sources",
+        "last_updated"
+      ],
+      "last_updated": null
+    }
+  ],
+  "metrics": {
+    "area_count": 1,
+    "published_count": 1,
+    "draft_count": 0
+  },
+  "next_actions": [
+    "shibuya.yml を拡張スキーマ（area-variables.schema.json）に合わせて更新",
+    "MDXページを完全なセクション構造（Hero+TOC+CTA上下+全セクション）に更新",
+    "CTAを2箇所配置（ページ上部と下部）",
+    "日本語ロケール（ja）のコンテンツを追加",
+    "rent_by_type.quarter を設定（例: 2025-Q1）",
+    "commute_times 配列を追加（目的地、分、express/local）",
+    "subareas 配列を追加",
+    "sources 配列を追加（SUUMO/Homes等）",
+    "last_updated を ISO 日付形式で設定"
+  ],
+  "notes": [
+    "EN/JAのみ対応。CTAは上下2箇所必須。",
+    "数値は変数YAMLのみを出所とする。無い値は書かない。",
+    "現在のshibuya.ymlは最小限のスキーマのみ。拡張スキーマに合わせて更新が必要。",
+    "MDXページは現在最小構成。完全なLP構造（Hero/TOC/全セクション/CTA）に拡張が必要。"
+  ]
+}
