@@ -1,0 +1,88 @@
+=== Cursor Audit Log ===
+Timestamp: $(date +"%Y-%m-%d %H:%M:%S")
+Root: /Users/kinotomonari/claude_files/area-guides
+
+=== Git Status ===
+Branch: save/working-20251101-1357
+Remote: origin https://github.com/TomoKino2015/area-guides.git
+Dirty: true (1 file modified)
+
+=== Runtime Versions ===
+Node.js: v18.20.7
+pnpm: 10.14.0
+Next.js: 15.2.4
+
+=== File Structure ===
+PRD: docs/prd.md (exists)
+Schema: lib/content/area.schema.ts (exists, basic schema)
+Extended Schema: bmad/prompts/area-variables.schema.json (exists)
+MDX Config: next.config.mjs (exists, @next/mdx configured)
+
+=== Areas Detected ===
+1. shibuya
+   - YAML: content/area/shibuya.yml (exists)
+   - MDX: app/(marketing)/areas/shibuya/page.mdx (exists)
+   - Status: Published
+   - Languages: en only
+
+=== Schema Validation (shibuya.yml) ===
+Current schema: AreaFrontmatter (basic)
+Required keys present:
+  ✓ title (but string, not object)
+  ✓ locale (but string, not array)
+  ✓ status: Published
+  ✓ publishAt: 2025-11-01T00:00:00.000Z
+  ✓ tags
+  ✓ faq (minimal)
+
+Missing keys (extended schema):
+  ✗ locale (array format)
+  ✗ title.en / title.ja (object format)
+  ✗ subtitle
+  ✗ rent_by_type.quarter
+  ✗ rent_by_type.* (1K, 1LDK, etc.)
+  ✗ commute_times
+  ✗ subareas
+  ✗ overview
+  ✗ who_it_fits
+  ✗ schools_healthcare
+  ✗ parks
+  ✗ shopping_dining
+  ✗ events
+  ✗ cta.text / cta.url
+  ✗ sources
+  ✗ last_updated
+
+=== MDX Page Status ===
+File: app/(marketing)/areas/shibuya/page.mdx
+- Exists: yes
+- Structure: minimal (has "use client", basic markdown)
+- Missing sections:
+  - Hero (with subtitle, as-of tag)
+  - TOC
+  - Overview (with locale blocks)
+  - Who it fits
+  - Subareas
+  - Commute times
+  - Rents (with quarter)
+  - Schools & Healthcare
+  - Parks
+  - Shopping & Dining
+  - Events
+  - CTA at top
+  - CTA at bottom (has one)
+  - i18n blocks (ja missing)
+
+=== PRD Acceptance Criteria ===
+✓ /areas/shibuya page exists
+⚠ Hero+TOC+CTA: MDX minimal, needs expansion
+✓ Draft filtering: shibuya is Published
+⚠ Build errors: MDX component issues possible
+
+=== Next Actions Identified ===
+1. Update shibuya.yml to extended schema format
+2. Expand MDX page with full section structure
+3. Add Japanese locale content
+4. Add CTA at top of page
+5. Add data sources array
+6. Add last_updated field

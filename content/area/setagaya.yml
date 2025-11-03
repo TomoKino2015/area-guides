@@ -1,0 +1,25 @@
+locales:
+  en:
+    title: "Setagaya Area Guide"
+    summary: null
+  ja:
+    title: "世田谷区エリアガイド"
+    summary: null
+
+meta:
+  quarter: "2025-Q1"
+  updatedAt: null
+  status: "Draft"
+
+commute_times: {}
+rent_by_type: {}
+cta:
+  primary:
+    text_en: "Readiness Check"
+    text_ja: "Readiness Check"
+    url: "/readiness"
+  secondary:
+    text_en: "Search by area"
+    text_ja: "エリアから探す"
+    url: "/areas"
+
