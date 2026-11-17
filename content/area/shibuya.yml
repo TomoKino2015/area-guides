@@ -1,16 +1,376 @@
-title: "Shibuya Area Guide"
+slug: "shibuya"
 
-locale: "en"
+title:
+  en: "Shibuya"
+  ja: "渋谷区"
+
+locale: ["en", "ja"]
+
+meta:
+  quarter: "2026-Q2 inventory snapshot"
+  updatedAt: "2026-05-17"
+  status: "Published"
 
 status: "Published"
 
-publishAt: "2025-11-01T00:00:00.000Z"
+subtitle:
+  en: "A premium central lifestyle area where location is easy to love, but inventory needs to be handled carefully"
+  ja: "魅力は伝わりやすい一方で、条件を重ねると在庫が薄くなりやすい都心ライフスタイルエリア"
 
-tags: ["shibuya","tokyo","living","commute-30m"]
+statistics:
+  population:
+    total: 243883
+    foreign_residents: 8704
+    foreign_ratio: "3.6%"
+    source: "渋谷区統計書"
+    year: 2024
+  safety:
+    crime_total: 3024
+    crime_violent: 33
+    crime_theft: 1832
+    source: "警視庁 区市町村の町丁別、罪種別及び手口別認知件数"
+    year: 2024
+  real_estate:
+    transactions_2025: 1065
+    mansion_avg_price: 118157952
+    mansion_median_price: 80000000
+    mansion_avg_sqm_price: 1826396
+    mansion_median_sqm_price: 1571429
+    top_districts:
+      - name: "代々木"
+        count: 105
+      - name: "千駄ケ谷"
+        count: 74
+      - name: "広尾"
+        count: 70
+      - name: "恵比寿"
+        count: 63
+      - name: "神宮前"
+        count: 50
+    most_expensive_districts:
+      - name: "猿楽町"
+        sqm_price: 2979322
+      - name: "南平台町"
+        sqm_price: 2688307
+      - name: "恵比寿南"
+        sqm_price: 2458579
+      - name: "渋谷"
+        sqm_price: 2390872
+      - name: "代官山町"
+        sqm_price: 2276142
+    source: "国土交通省 不動産取引価格情報（REINFOLIB XIT001）"
+    year: 2025
+  station_passengers:
+    shibuya_jr: 628118
+    shibuya_keio: 285759
+    shibuya_ginza: 179645
+    ebisu: null
+    daikanyama: null
+    source: "国土数値情報 駅別乗降客数（REINFOLIB XKT015）"
+    year: 2023
+  athearth:
+    tokyo_baseline:
+      displayable_rooms: 9102
+      foreign_applicant_negotiable: 2203
+      foreign_applicant_negotiable_ratio: "24.2%"
+      pet_negotiable: 1274
+      corporate_contract_negotiable: 754
+      no_key_money: 7098
+    shibuya_meguro_lifestyle_scope:
+      displayable_rooms: 1312
+      foreign_applicant_negotiable: 301
+      foreign_applicant_negotiable_ratio: "22.9%"
+      pet_negotiable: 170
+      corporate_contract_negotiable: 75
+      no_key_money: 902
+    source: "AtHearth listed rental inventory snapshot"
+    reliability: "room_level_inventory_snapshot"
+    note: "Counts are directional and do not guarantee availability, negotiation, application outcome, or contract completion."
+    updated: "2026-05-17"
+
+inventory_snapshot:
+  updated_at: "2026-05-17"
+  source_label: "AtHearth original inventory snapshot"
+  method_note: "Room-level AtHearth listed rental inventory currently displayable in the Tokyo rental search. Counts use the default Tokyo search scope and marketed availability labels, exclude already-applied rooms, and are rounded or suppressed when needed. Availability and negotiability change daily, so use these figures as directional guidance, not as application or contract guarantees."
+  denominator:
+    label: "Tokyo baseline displayable rooms"
+    value: 9102
+    unit: "rooms"
+  highlights:
+    - label_en: "Tokyo baseline: foreign-applicant negotiable"
+      label_ja: "外国籍相談可寄り"
+      value: 2203
+      unit: "rooms"
+      ratio: "24.2%"
+      note_en: "Across the default Tokyo rental search scope. Use it as a baseline, not as Shibuya-only proof."
+      note_ja: "東京賃貸検索の標準範囲全体の目安です。渋谷だけの数値として扱わないでください。"
+    - label_en: "Tokyo baseline: pets negotiable"
+      label_ja: "ペット相談"
+      value: 1274
+      unit: "rooms"
+      ratio: "14.0%"
+      note_en: "Pets are possible, but combining pets with Shibuya preference and strict budget can narrow quickly."
+      note_ja: "ペット条件は可能ですが、渋谷志向や予算条件と重ねると候補が薄くなります。"
+    - label_en: "Shibuya / Meguro lifestyle set"
+      label_ja: "渋谷・目黒ライフスタイル"
+      value: 1312
+      unit: "rooms"
+      ratio: "14.4% of Tokyo baseline"
+      note_en: "Broader than Shibuya-ku only: Shibuya, Meguro, Setagaya, and Shinagawa."
+      note_ja: "渋谷区だけでなく、渋谷区・目黒区・世田谷区・品川区で比較する範囲です。"
+    - label_en: "Lifestyle set: foreign-applicant negotiable"
+      label_ja: "渋谷・目黒内の外国籍相談可寄り"
+      value: 301
+      unit: "rooms"
+      ratio: "22.9%"
+      note_en: "Useful search direction, but each building still needs confirmation before application."
+      note_ja: "有効な検索方向ですが、申込前の個別確認は必要です。"
+    - label_en: "Lifestyle set: corporate contract negotiable"
+      label_ja: "法人契約相談可"
+      value: 75
+      unit: "rooms"
+      ratio: "5.7%"
+      note_en: "Best handled with company lease details ready before shortlisting."
+      note_ja: "法人契約は、契約主体や必要書類を先に整理すると探しやすくなります。"
+  budget_table:
+    title_en: "Budget reality for the Shibuya / Meguro lifestyle set"
+    title_ja: "渋谷・目黒ライフスタイルの予算別現実度"
+    rows:
+      - label: "¥130k-¥200k"
+        total: 343
+        expat_friendly: 89
+        note_en: "Possible, but be careful with pets, size, and newer-building expectations."
+        note_ja: "可能ですが、ペット・広さ・築浅感を同時に求めると薄くなります。"
+      - label: "¥130k-¥250k"
+        total: 722
+        expat_friendly: 168
+        note_en: "A better working range for singles and couples who want west/southwest access."
+        note_ja: "西側・南西側の雰囲気を残したい単身/カップルの現実ラインです。"
+      - label: "¥130k-¥300k"
+        total: 1034
+        expat_friendly: 238
+        note_en: "The search opens up, but premium subareas still need tradeoff choices."
+        note_ja: "候補は増えますが、人気サブエリアでは優先順位の整理が必要です。"
+
+rent_by_type:
+  quarter: "2026-Q1"
+  source: "AtHearth掲載物件の中央値（賃料+管理費）"
+  source_label: "AtHearth data"
+  reliability: "atbb_field_only"
+  sample_size: 5000
+  "1K":
+    median: 135000
+    count: 1043
+  "1DK":
+    median: 160000
+    count: 383
+  "1LDK":
+    median: 224000
+    count: 1697
+  "2DK":
+    median: 146000
+    count: 120
+  "2LDK":
+    median: 330000
+    count: 739
+  "3LDK":
+    median: 479000
+    count: 168
+  "4LDK":
+    median: 1300000
+    count: 28
+  comparison_homes_co_jp:
+    note: "homes.co.jp平均値との差: 1K -1%, 1LDK -12%, 2LDK -13%。AtHearth中央値の方が実態に近い"
+
+commute_times:
+  - destination: "Shinjuku"
+    minutes: 5
+    type: "express"
+    line: "JR Yamanote Line"
+  - destination: "Shinjuku"
+    minutes: 7
+    type: "local"
+    line: "JR Yamanote Line"
+  - destination: "Tokyo Station"
+    minutes: 15
+    type: "express"
+    line: "JR Yamanote Line"
+  - destination: "Roppongi"
+    minutes: 12
+    type: "local"
+    line: "Tokyo Metro Hanzomon Line"
+  - destination: "Harajuku"
+    minutes: 2
+    type: "local"
+    line: "JR Yamanote Line"
+
+subareas:
+  - name:
+      en: "Daikanyama"
+      ja: "代官山"
+    description:
+      en: "A chic neighborhood known for stylish boutiques, trendy cafes, and a sophisticated atmosphere. Popular among young professionals and fashion enthusiasts, Daikanyama strikes the perfect balance between luxury and comfort. With its tree-lined streets creating a serene backdrop and stylish cafes dotting every corner, it's easy to see why this area has become a hotspot for Tokyo's fashion-conscious crowd and even celebrities seeking a refined urban lifestyle."
+      ja: "洗練されたブティック、トレンディなカフェ、上品な雰囲気で知られるおしゃれなエリア。若いプロフェッショナルやファッション愛好家に人気で、代官山は高級と快適さの完璧なバランスを実現しています。静かな背景を作る樹木に囲まれた通りと、あらゆる角に点在するスタイリッシュなカフェにより、このエリアが東京のファッション意識の高い人々や、洗練された都市生活を求めるセレブリティのホットスポットとなった理由が容易に理解できます。"
+    highlights:
+      - "Fashion boutiques"
+      - "Trendy cafes"
+      - "Laid-back atmosphere"
+  - name:
+      en: "Ebisu"
+      ja: "恵比寿"
+    description:
+      en: "An upscale area featuring Yebisu Garden Place, gourmet dining, and rooftop bars. Ideal for food lovers and young professionals seeking an elegant urban lifestyle. Ebisu has evolved into a major culinary destination, where the impressive Yebisu Garden Place complex seamlessly blends modern retail spaces with sophisticated dining options. Whether you're enjoying a gourmet meal at one of the many fine restaurants or sipping cocktails at a rooftop bar with stunning city views, Ebisu delivers an elegant urban living experience that appeals to discerning palates."
+      ja: "恵比寿ガーデンプレイス、グルメレストラン、ルーフトップバーを備えた高級エリア。美食家や洗練された都市生活を求める若いプロフェッショナルに最適。恵比寿は主要な美食の目的地へと進化し、印象的な恵比寿ガーデンプレイス複合施設が現代的な小売スペースと洗練されたダイニングオプションを自然に融合させています。数多くの高級レストランの一つでグルメな食事を楽しむか、素晴らしい街の景色を眺めながらルーフトップバーでカクテルを飲むかに関わらず、恵比寿は洗練された味覚に訴える優雅な都市生活体験を提供します。"
+    highlights:
+      - "Yebisu Garden Place"
+      - "Gourmet dining"
+      - "Rooftop bars"
+  - name:
+      en: "Sendagaya"
+      ja: "千駄ヶ谷"
+    description:
+      en: "A unique blend of sports facilities, cultural landmarks, and residential tranquility. Known for its proximity to major sports venues and cultural sites, Sendagaya offers a distinctive living experience in the heart of Tokyo. This neighborhood plays a significant role in Japan's sports scene while maintaining a peaceful residential character. Residents enjoy easy access to some of Tokyo's most iconic venues while living in an area that provides a welcome retreat from the bustling energy of central Shibuya."
+      ja: "スポーツ施設、文化的ランドマーク、住宅の静けさが融合した独特なエリア。主要なスポーツ会場や文化施設への近さで知られ、千駄ヶ谷は東京の中心部で独特な生活体験を提供します。この地区は日本のスポーツシーンで重要な役割を果たしながら、静かな住宅の特徴を維持しています。住民は、東京の最も象徴的な会場のいくつかに簡単にアクセスできる一方で、渋谷中心部の活気あるエネルギーから離れた歓迎すべき避難所を提供するエリアに住むことができます。"
+    highlights:
+      - "Sports facilities"
+      - "Cultural landmarks"
+      - "Residential tranquility"
+  - name:
+      en: "Omotesando"
+      ja: "表参道"
+    description:
+      en: "Often called Tokyo's Champs-Élysées, featuring luxury boutiques, art galleries, and stunning architecture. A fashionable district attracting both locals and tourists. Omotesando represents the pinnacle of Tokyo's luxury shopping scene, where international designer stores stand alongside contemporary art galleries and architectural masterpieces. Whether you're exploring the latest fashion trends, enjoying a quiet afternoon in a stylish café, or simply admiring the stunning modern architecture that lines the boulevard, Omotesando offers an elegant, cosmopolitan atmosphere that captures the essence of sophisticated Tokyo living."
+      ja: "東京のシャンゼリゼとも呼ばれ、高級ブティック、アートギャラリー、美しい建築が特徴。地元の人々と観光客の両方を魅了するファッショナブルな地区。表参道は東京の高級ショッピングシーンの頂点を表し、国際的なデザイナーストアが現代アートギャラリーや建築の傑作と並んでいます。最新のファッショントレンドを探索するか、スタイリッシュなカフェで静かな午後を楽しむか、または大通りに並ぶ素晴らしい現代建築を単に鑑賞するかに関わらず、表参道は洗練された東京の生活の本質を捉えた優雅で国際的な雰囲気を提供します。"
+    highlights:
+      - "Luxury shopping"
+      - "Art galleries"
+      - "Architectural landmarks"
+  - name:
+      en: "Yoyogi"
+      ja: "代々木"
+    description:
+      en: "A peaceful neighborhood with Yoyogi Park and Meiji Shrine nearby. Offers a tranquil retreat from the bustling city center while maintaining excellent accessibility. Yoyogi serves as a haven of greenery for those who prefer a more relaxed pace of life, with the expansive Yoyogi Park providing ample space for outdoor activities and the historic Meiji Shrine offering a spiritual sanctuary. Nature lovers and families particularly appreciate Yoyogi's charm, as it provides a peaceful escape from the fast-paced energy of central Shibuya while remaining conveniently close to everything you need."
+      ja: "代々木公園と明治神宮に近い静かなエリア。都心の喧騒から離れた静かな避難所を提供しながら、優れたアクセス性を維持。代々木は、よりリラックスした生活のペースを好む人々にとって緑豊かな避難所として機能し、広々とした代々木公園が屋外活動のための十分なスペースを提供し、歴史的な明治神宮が精神的な聖域を提供しています。自然愛好家や家族は特に代々木の魅力を評価しており、渋谷中心部の高速なエネルギーから平和な逃避を提供しながら、必要なすべてのものに便利に近いままです。"
+    highlights:
+      - "Yoyogi Park"
+      - "Meiji Shrine"
+      - "Green spaces"
+
+overview:
+  en: "Shibuya is one of Tokyo's easiest areas for international renters to understand: central, social, well connected, and full of recognizable neighborhoods such as Ebisu, Daikanyama, Omotesando, Yoyogi, and Sendagaya. That makes it a strong first preference for many newcomers, especially people who want restaurants, shopping, nightlife, creative offices, or quick access across central Tokyo.\n\nThe practical point is that Shibuya should rarely be treated as one exact station or one exact address. AtHearth's current inventory shows that the broader Shibuya / Meguro lifestyle set keeps more realistic options than Shibuya Station or Shibuya-ku alone. If you add pets, a strict budget, family size, or newer-building expectations, the search can narrow quickly.\n\nUse this guide as a decision map: start with the lifestyle you want, check whether the current inventory supports it, then broaden to nearby wards or commute lines before the search becomes too thin."
+  ja: "渋谷は、日本にまだ土地勘がない外国人にも説明しやすいエリアです。都心で、飲食・買い物・ナイトライフ・クリエイティブ職の拠点が多く、恵比寿・代官山・表参道・代々木・千駄ヶ谷など、暮らし方を想像しやすいサブエリアがあります。\n\nただし、実際の物件探しでは「渋谷駅だけ」「渋谷区だけ」に絞りすぎない方が現実的です。AtHearthの現在在庫を見ると、渋谷・目黒ライフスタイルとして少し広げた方が比較できる候補が残ります。ペット、厳しめの予算、ファミリーサイズ、築浅感などを重ねると、一気に候補が薄くなりやすいです。\n\nこのガイドでは、まず欲しい暮らし方を決め、次に現在の在庫で現実的かを確認し、薄ければ近い区や通勤しやすい路線に広げる、という順番で判断できるようにしています。"
+
+who_it_fits:
+  en:
+    - "New arrivals who need an easy mental map of Tokyo - Shibuya is simple to explain, central, and connected, but the search should start from a broader Shibuya / Meguro lifestyle set instead of one station."
+    - "Single professionals and couples with a realistic premium budget - the ¥130k-¥250k band opens more options than a strict sub-¥200k search, especially when foreign-applicant negotiability matters."
+    - "People who value restaurants, shopping, and after-work options more than maximum room size - the area rewards lifestyle convenience, while larger floor plans often require broader wards or higher rent."
+    - "Applicants with extra conditions such as pets, corporate lease, or newer buildings - Shibuya can work, but these conditions should be checked early because the pool thins quickly."
+    - "Residents who want west/southwest Tokyo access - Shibuya, Meguro, Setagaya, and Shinagawa can be compared together before moving to a narrower shortlist."
+  ja:
+    - "東京の土地勘をこれから作る人 - 渋谷は説明しやすく、都心アクセスも強い一方で、最初は駅単体ではなく渋谷・目黒ライフスタイルとして広めに見る方が現実的です。"
+    - "プレミアム寄りの予算を組める単身・カップル - 外国籍相談可も重視するなら、13-20万円より13-25万円の方が比較できる候補が増えます。"
+    - "広さよりも飲食・買い物・仕事後の動きやすさを重視する人 - 生活利便性は強い一方、広い間取りは周辺区への拡張や予算上げが必要になりやすいです。"
+    - "ペット・法人契約・築浅感など追加条件がある人 - 渋谷でも探せますが、条件を重ねるほど候補が薄くなるため初期段階で確認するべきです。"
+    - "西側・南西側の生活圏を使いたい人 - 渋谷区だけでなく、目黒・世田谷・品川も含めて比較してから絞ると判断しやすくなります。"
+
+shopping_dining:
+  en: "Shibuya works best for renters who want daily choices: casual restaurants near the station, quieter dining around Ebisu and Daikanyama, and shopping around Omotesando and Harajuku. The tradeoff is noise and weekend crowding around the major hubs, so station choice matters."
+  ja: "渋谷は、駅周辺の気軽な飲食、恵比寿・代官山寄りの落ち着いた店、表参道・原宿方面の買い物を日常的に使いたい人に向きます。一方で主要駅周辺は混雑や騒がしさもあるため、どの駅に寄せるかが重要です。"
+
+schools_healthcare:
+  en: "International schools, universities, clinics, and larger hospitals are accessible from the Shibuya / Hiroo / Aoyama side, but families should check commute time to the exact campus or clinic before choosing a subarea. A slightly broader ward search can preserve both access and room size."
+  ja: "渋谷・広尾・青山方面はインターナショナルスクール、大学、クリニック、大きめの病院にアクセスしやすい一方、家族世帯は実際の通学・通院先までの時間を個別に確認する必要があります。少し広めの区で探すと、アクセスと広さの両立がしやすくなります。"
+
+parks:
+  en: "Yoyogi Park, Shoto, and the greener pockets around Sendagaya give Shibuya more breathing room than the station image suggests. If green space is a daily need, compare Yoyogi, Sendagaya, Meguro, and Setagaya rather than only central Shibuya."
+  ja: "代々木公園、松濤、千駄ヶ谷周辺の緑地があるため、渋谷は駅前の印象よりも余白を作れます。緑の近さを日常条件にするなら、渋谷中心だけでなく代々木・千駄ヶ谷・目黒・世田谷まで比較すると探しやすいです。"
+
+lifestyle:
+  en: "The simplest way to use Shibuya in a rental search is not to ask whether it is a good area. It is to ask which version of Shibuya fits the household: station-side convenience, Ebisu / Daikanyama dining, Omotesando access, Yoyogi green space, or a broader west/southwest lifestyle. Once that is clear, budget, applicant profile, pet rules, and room size can be tested against the current inventory."
+  ja: "渋谷探しで大事なのは「渋谷が良いか」ではなく、どの渋谷を使いたいかです。駅近の利便性、恵比寿・代官山の飲食、表参道方面のアクセス、代々木の緑、西側・南西側に広げた生活圏のどれを優先するかを決めると、予算・申込条件・ペット・広さを現在在庫に照らして判断しやすくなります。"
+
+events: []
 
 faq:
+  - q:
+      en: "Is Shibuya foreigner-friendly?"
+      ja: "渋谷は外国人に優しいですか？"
+    a:
+      en: "Shibuya is one of the easier Tokyo areas for international renters to understand and explain, but that is not the same as every building accepting every foreign applicant. In the current AtHearth displayable inventory snapshot, 2,203 of 9,102 rooms are tagged as foreign-applicant negotiable. Treat this as a useful starting signal, then confirm the building, guarantor, documents, and applicant profile before application."
+      ja: "渋谷は外国人にも理解しやすく説明しやすいエリアですが、すべての建物で外国籍申込が通るという意味ではありません。AtHearthの現在表示対象在庫では、9,102室中2,203室が外国籍相談可寄りのシグナルを持っています。これは探し始めの有効な目安として使い、申込前には建物・保証会社・必要書類・申込者条件を個別に確認する必要があります。"
+  - q:
+      en: "What is the average rent range in Shibuya?"
+      ja: "渋谷の平均賃料範囲は？"
+    a:
+      en: "In the AtHearth 2026-Q1 Shibuya inventory sample, median listed rent plus management fee was about ¥135,000 for 1K, ¥224,000 for 1LDK, ¥330,000 for 2LDK, and ¥479,000 for 3LDK. Premium subareas such as Daikanyama and Omotesando can sit above these guideposts, so use the current inventory count and your must-have conditions together."
+      ja: "AtHearthの2026-Q1渋谷在庫サンプルでは、賃料+管理費の中央値は1Kで約13.5万円、1LDKで約22.4万円、2LDKで約33万円、3LDKで約47.9万円です。代官山・表参道などの人気サブエリアではこれより高くなりやすいため、相場だけでなく現在の候補数と必須条件を合わせて判断してください。"
+  - q:
+      en: "How accessible is Shibuya by public transportation?"
+      ja: "渋谷への公共交通機関でのアクセスは？"
+    a:
+      en: "Shibuya is a strong rail hub with JR, Tokyo Metro, Tokyu, and Keio access. For a rental decision, the practical question is not only travel time from Shibuya Station, but whether the specific home is closer to Shibuya, Ebisu, Daikanyama, Yoyogi, Sendagaya, or another station."
+      ja: "渋谷はJR、東京メトロ、東急、京王が使える主要ターミナルです。賃貸判断では、渋谷駅からの所要時間だけでなく、実際の住まいが渋谷・恵比寿・代官山・代々木・千駄ヶ谷など、どの駅に近いかを見る方が重要です。"
+  - q:
+      en: "How safe is Shibuya for residents?"
+      ja: "渋谷の治安はどうですか？"
+    a:
+      en: "Shibuya has busy commercial zones, nightlife streets, and quieter residential pockets, so safety and comfort vary by block and time of day. Treat the official crime data as one reference, then check the route from the station to the building, late-night crowding, lighting, and building security."
+      ja: "渋谷は商業地、夜の人通りが多い通り、落ち着いた住宅地が混在しているため、安心感は場所と時間帯で変わります。公的な犯罪統計を一つの参考にしつつ、駅から建物までの動線、夜間の混雑、街灯、建物のセキュリティを確認してください。"
+  - q:
+      en: "What lifestyle amenities are available in Shibuya?"
+      ja: "渋谷にはどのような生活アメニティがありますか？"
+    a:
+      en: "The main amenity value is choice: restaurants, cafes, shopping, gyms, parks, clinics, and rail access are all close, but not evenly distributed. Use the subarea first, then check whether the building gives you the daily route you actually want."
+      ja: "渋谷の価値は選択肢の多さです。飲食、カフェ、買い物、ジム、公園、クリニック、鉄道アクセスは揃っていますが、場所によって密度は違います。まずサブエリアを決め、その建物が実際に使いたい日常動線に合うか確認してください。"
 
-  - { q: "Is this area foreigner-friendly?", a: "Yes. Many buildings allow foreign tenants and English support is available via AtHearth." }
+cta:
+  text:
+    en: "Search the Shibuya / Meguro lifestyle set"
+    ja: "渋谷・目黒ライフスタイルで探す"
+  url: "/rent?wards=13113+13110+13112+13109&ward_group=shibuya_meguro&is_available=true&is_available_in_1_month=true&is_available_in_1_plus_months=true"
+  priority: "area_search"
 
-  - { q: "Average rent range?", a: "1K from ¥110k+, 1LDK from ¥220k+ (indicative)." }
+assets:
+  hero:
+    path: "/images/shibuya.jpg"
+    alt:
+      en: "Shibuya Scramble Crossing and cityscape"
+      ja: "渋谷スクランブル交差点と街並み"
+  map:
+    path: "/images/shibuya-map.png"
+    alt:
+      en: "Shibuya Ward map"
+      ja: "渋谷区マップ"
+  gallery:
+    - path: "/images/shibuya.jpg"
+      alt:
+        en: "Shibuya cityscape"
+        ja: "渋谷の街並み"
 
+sources:
+  - name: "AtHearth listed rental inventory snapshot"
+    url: null
+    type: "inventory"
+  - name: "JR East"
+    url: "https://www.jreast.co.jp"
+    type: "commute"
+  - name: "Tokyo Metro"
+    url: "https://www.tokyometro.jp"
+    type: "commute"
+  - name: "Shibuya City Official"
+    url: "https://www.city.shibuya.tokyo.jp"
+    type: "general"
+
+last_updated: "2026-05-17"
+
+tags:
+  - "shibuya"
+  - "tokyo"
+  - "living"
+  - "commute-30m"
+  - "fashion"
+  - "entertainment"
+  - "dining"
+  - "nightlife"
+  - "central-tokyo"
