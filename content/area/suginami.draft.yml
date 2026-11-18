@@ -1,0 +1,400 @@
+slug: "suginami"
+
+title:
+  ja: "杉並区エリアガイド2025"      # G1-②
+  en: "Suginami Area Guide 2025"     # G1-②
+
+meta:
+  quarter: "2025-Q1"                 # G1-③
+  updated_at: "2025-02-05"           # G1-③
+  reading_time_minutes: 5            # G1-①
+  status: "Draft"
+
+hero:
+  tagline:
+    ja: "都心へのアクセスが良く、自然と文化が調和する住みやすい街。" # G1-②
+    en: "Easy access to central Tokyo, where nature and culture harmonize in a livable neighborhood." # G1-②
+  lead:
+    ja: |
+      東京23区の西側に位置する杉並区は、JR中央線や東京メトロ丸ノ内線など複数の路線が走り、
+      新宿・渋谷・東京・品川へのアクセスが良好です。荻窪や高円寺などの主要駅を中心に、
+      ファミリー層から若手ビジネスパーソンまで、多様な人々が暮らす住みやすいエリアです。  # G1-②
+    en: |
+      Located on the west side of Tokyo's 23 wards, Suginami offers excellent access to Shinjuku, Shibuya, Tokyo, and Shinagawa
+      via multiple train lines including JR Chuo Line and Tokyo Metro Marunouchi Line. Centered around major stations like Ogikubo and Koenji,
+      it's a livable area attracting diverse residents from families to young professionals.  # G1-②
+
+assets:
+  hero:
+    path: null                        # G1-③
+    alt:
+      ja: null                        # G1-②
+      en: null                        # G1-②
+  map:
+    path: null                        # G1-③
+    alt:
+      ja: null                        # G1-②
+      en: null                        # G1-②
+
+who_it_fits:
+  tags:                              # G2-①
+    - "ファミリー"
+    - "共働きカップル"
+    - "都心勤務だけど静かな環境が好き"
+    - "自然豊かな環境"
+    - "交通利便性重視"
+  description:
+    ja: |                            # G2-②
+      杉並区は、都心へのアクセスが良く、緑豊かな環境と子育てしやすい街として人気があります。
+      特にファミリー層や共働きカップルに適しており、静かで落ち着いた住宅街が広がっています。
+      高円寺や荻窪などの主要駅周辺には商店街や商業施設が充実し、日常生活も便利です。
+    en: |
+      Suginami is popular for its excellent access to central Tokyo, green environment, and family-friendly atmosphere.
+      It's particularly suitable for families and dual-income couples, with quiet residential areas spreading throughout the ward.
+      Major stations like Koenji and Ogikubo offer well-equipped shopping streets and commercial facilities for daily convenience.
+  sample_residents:                  # G2-①/② 簡易サンプル（1〜2件）
+    - name: "Sample Resident"
+      profile_ja: "荻窪在住・30代・会社員"
+      profile_en: "Lives in Ogikubo, 30s, office worker"
+      quote_ja: "新宿まで11分で、通勤が楽です。緑も多くて、週末は散歩を楽しんでいます。"
+      quote_en: "It's convenient for commuting, just 11 minutes to Shinjuku. There's plenty of greenery, and I enjoy walking on weekends."
+
+subareas:
+  - id: "ogikubo"
+    name:
+      ja: "荻窪"                      # G3-③
+      en: "Ogikubo"
+    description:
+      ja: "区内最大のターミナル駅。JR中央線・中央総武線と東京メトロ丸ノ内線が利用でき、商業施設が充実しています。新宿まで11分、東京まで22分の好立地。"  # G3-②
+      en: "The ward's largest terminal station. Accessible via JR Chuo Line, Chuo-Sobu Line, and Tokyo Metro Marunouchi Line, with well-equipped commercial facilities. Just 11 minutes to Shinjuku, 22 minutes to Tokyo."
+    highlights:
+      - "区内最大のターミナル駅"
+      - "商業施設充実"
+      - "ファミリー層に人気"
+    cons: []
+    hero_image:
+      path: null                      # G3-③
+      alt:
+        ja: null                      # G3-②
+        en: null                      # G3-②
+  - id: "koenji"
+    name:
+      ja: "高円寺"                    # G3-③
+      en: "Koenji"
+    description:
+      ja: "サブカルチャーの街として知られ、イベントや祭りが多く開催されます。JR中央線が通り、新宿まで6分とアクセス良好。"  # G3-②
+      en: "Known as a subculture hub with many events and festivals. Served by JR Chuo Line, just 6 minutes to Shinjuku."
+    highlights:
+      - "サブカルチャーの街"
+      - "イベント・祭りが多い"
+      - "新宿まで6分"
+    cons: []
+    hero_image:
+      path: null                      # G3-③
+      alt:
+        ja: null                      # G3-②
+        en: null                      # G3-②
+  - id: "nishiogikubo"
+    name:
+      ja: "西荻窪"                    # G3-③
+      en: "Nishi-Ogikubo"
+    description:
+      ja: "緑や自然が多く、飲食店や教育施設が充実したエリア。新宿まで13分、東京まで27分の好立地。"  # G3-②
+      en: "An area rich in greenery and nature, with well-equipped dining and educational facilities. Just 13 minutes to Shinjuku, 27 minutes to Tokyo."
+    highlights:
+      - "自然豊か"
+      - "教育施設充実"
+      - "生活利便性が高い"
+    cons: []
+    hero_image:
+      path: null                      # G3-③
+      alt:
+        ja: null                      # G3-②
+        en: null                      # G3-②
+  - id: "asagaya"
+    name:
+      ja: "阿佐ケ谷"                  # G3-③
+      en: "Asagaya"
+    description:
+      ja: "交通の便が良く、公園や小学校、病院が近い子育て向けの街。新宿まで8分、東京まで22分。"  # G3-②
+      en: "A family-friendly area with good transportation access, parks, elementary schools, and hospitals nearby. Just 8 minutes to Shinjuku, 22 minutes to Tokyo."
+    highlights:
+      - "子育て向け環境"
+      - "交通至便"
+      - "医療・教育施設充実"
+    cons: []
+    hero_image:
+      path: null                      # G3-③
+      alt:
+        ja: null                      # G3-②
+        en: null                      # G3-②
+
+money_and_access:
+  # サブエリア別の賃料・分数・年収目安（G4-③）
+  subarea_rent_table:
+    data_source: null                 # G4-③
+    rows: []                          # G4-③ 後で追加可能
+  # 区全体の間取り別賃料（G4-③） - SoTから反映
+  unit_rent_stats:
+    quarter: "2025-Q1"                # G4-③
+    source: "homes.co.jp"
+    rows:
+      - type: "1R"
+        avg_rent_jpy: 81400           # G4-③ SoTから反映（8.14万円 → 81400円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "単身者向け・コンパクト設計"  # G4-②
+        note_en: "For singles, compact design"
+      - type: "1K"
+        avg_rent_jpy: 95800           # G4-③ SoTから反映（9.58万円 → 95800円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "効率的な空間利用"
+        note_en: "Efficient space utilization"
+      - type: "1DK"
+        avg_rent_jpy: 124300          # G4-③ SoTから反映（12.43万円 → 124300円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "コンパクトなダイニング付き"
+        note_en: "Compact with dining area"
+      - type: "1LDK"
+        avg_rent_jpy: 169700          # G4-③ SoTから反映（16.97万円 → 169700円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "カップル向け・広めのリビング"  # G4-②
+        note_en: "For couples, spacious living room"
+      - type: "2K"
+        avg_rent_jpy: 119900          # G4-③ SoTから反映（11.99万円 → 119900円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "2部屋タイプ"
+        note_en: "Two-room type"
+      - type: "2DK"
+        avg_rent_jpy: 144900          # G4-③ SoTから反映（14.49万円 → 144900円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "ダイニング付き2部屋"
+        note_en: "Two rooms with dining area"
+      - type: "2LDK"
+        avg_rent_jpy: 232600          # G4-③ SoTから反映（23.26万円 → 232600円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "ファミリー向け・広々リビング"
+        note_en: "For families, spacious living area"
+      - type: "3LDK"
+        avg_rent_jpy: 281100          # G4-③ SoTから反映（28.11万円 → 281100円）
+        avg_size_sqm: null            # G4-③
+        note_ja: "ファミリー向け・広々リビング"
+        note_en: "For families, spacious living area"
+  # CTA（URLはG4-③、文言はG4-①）
+  cta:
+    primary:
+      label_ja: "杉並区の物件一覧を見る"   # G4-①
+      label_en: "View listings in Suginami"  # G4-①
+      url: null                              # G4-③
+    secondary:
+      label_ja: "Eligibility Checkを試してみる"  # G4-①
+      label_en: "Try Eligibility Check"         # G4-①
+      url: "/readiness"                       # G4-③
+
+life:
+  shopping:
+    summary_ja: "荻窪や高円寺を中心に、商店街や大型商業施設が充実しています。"  # G5-②
+    summary_en: "Well-equipped with shopping streets and large commercial facilities centered around Ogikubo and Koenji."
+    spots:                              # G5-③ 固有名詞＋G5-② テキスト
+      - name: "ルミネ荻窪"
+        type: "shopping"
+        note_ja: "駅直結の大型商業施設"      # G5-②
+        note_en: "Large commercial facility directly connected to the station."
+      - name: "高円寺商店街"
+        type: "shopping"
+        note_ja: "個性的な店が並ぶ商店街"    # G5-②
+        note_en: "Shopping street with unique shops."
+  dining:
+    summary_ja: "高円寺や荻窪を中心に、多様な飲食店が充実しています。"  # G5-②
+    summary_en: "Diverse dining options centered around Koenji and Ogikubo."
+    spots:
+      - name: "高円寺 飲食店街"
+        type: "dining"
+        note_ja: "老舗から新店まで、幅広い選択肢"  # G5-②
+        note_en: "Wide range from established shops to new restaurants."
+      - name: "荻窪 カフェ"
+        type: "dining"
+        note_ja: "落ち着いた雰囲気のカフェが多数"  # G5-②
+        note_en: "Many cafes with a relaxed atmosphere."
+  parks:
+    summary_ja: "善福寺公園や井の頭公園など、自然豊かな公園が点在しています。"  # G5-②
+    summary_en: "Green parks like Zenpukuji Park and Inokashira Park dot the area."
+    spots:
+      - name: "善福寺公園"
+        type: "park"
+        note_ja: "広大な緑地と池がある自然公園"  # G5-②
+        note_en: "Natural park with vast green spaces and a pond."
+      - name: "井の頭公園"
+        type: "park"
+        note_ja: "桜の名所として知られる大きな公園"  # G5-②
+        note_en: "Large park famous for cherry blossoms."
+  education_and_medical:
+    summary_ja: "教育施設や医療機関が充実しており、子育て環境が整っています。"  # G5-②
+    summary_en: "Well-equipped with educational and medical facilities, providing a good environment for raising children."
+    spots:
+      - name: "杉並区立病院"
+        type: "medical"
+        note_ja: "地域医療の拠点"            # G5-②
+        note_en: "Hub for regional healthcare"
+      - name: "教育施設"
+        type: "education"
+        note_ja: "小学校・中学校が充実"      # G5-②
+        note_en: "Well-equipped elementary and junior high schools"
+
+foreign_friendly:
+  summary_ja: "外国人居住者向けのサポートが徐々に充実してきています。"  # G6-②
+  summary_en: "Support for foreign residents is gradually improving."
+  bullets_ja:                          # G6-① or ②
+    - "英語対応の医療機関"
+    - "国際的な雰囲気のあるエリア（高円寺・荻窪など）"
+    - "多様な文化を受け入れる環境"
+  bullets_en:
+    - "English-speaking medical facilities"
+    - "Areas with an international atmosphere (Koenji, Ogikubo, etc.)"
+    - "Environment accepting diverse cultures"
+
+events:
+  # イベントの「箱」だけ持つ。詳細はゆるめでOK。
+  items:
+    - id: "koenji-awaodori"
+      name:
+        ja: "高円寺阿波踊り"          # G7-③ 固有名詞
+        en: "Koenji Awa Odori"
+      month: 8                         # G7-③
+      description:
+        ja: "毎年8月に開催される、高円寺の夏の風物詩。多くの踊り連が参加し、街中が熱気に包まれます。"  # G7-②
+        en: "A summer tradition in Koenji held every August. Many dance groups participate, filling the streets with energy."
+      hero_image:
+        path: null                     # G7-③
+        alt:
+          ja: null                     # G7-②
+          en: null                     # G7-②
+    - id: "asagaya-tanabata"
+      name:
+        ja: "阿佐ヶ谷七夕まつり"
+        en: "Asagaya Tanabata Festival"
+      month: 8
+      description:
+        ja: "阿佐ヶ谷で開催される七夕まつり。商店街が華やかに飾られ、多くの来場者で賑わいます。"
+        en: "Tanabata Festival held in Asagaya. Shopping streets are beautifully decorated, attracting many visitors."
+
+closing:
+  text_ja: "あなたにぴったりの物件を探しましょう！"  # G7-①
+  text_en: "Let's find a home that fits you."            # G7-①
+  extra_links:
+    - label_ja: "路線で検索したい方はこちら"          # G7-①
+      label_en: "Search by train line"                  # G7-①
+      url: null                                         # G7-③
+      line_ids: ["chuo", "marunouchi"]                 # G7-③ or ①
+
+# FAQ（G7）
+faq:
+  - q:
+      ja: "杉並区は外国人に優しいですか？"
+      en: "Is Suginami foreigner-friendly?"
+    a:
+      ja: "徐々に外国人居住者向けのサポートが充実してきています。英語対応の医療機関や、国際的な雰囲気のあるエリア（高円寺・荻窪など）があります。"
+      en: "Support for foreign residents is gradually improving. There are English-speaking medical facilities and areas with an international atmosphere (Koenji, Ogikubo, etc.)."
+  - q:
+      ja: "杉並区の平均賃料はどのくらいですか？"
+      en: "What is the average rent in Suginami?"
+    a:
+      ja: "間取りによって異なりますが、2025年Q1時点では、1Rが約8.14万円、1LDKが約16.97万円、2LDKが約23.26万円となっています。"
+      en: "Rent varies by floor plan. As of Q1 2025, average rents are approximately ¥81,400 for 1R, ¥169,700 for 1LDK, and ¥232,600 for 2LDK."
+  - q:
+      ja: "杉並区へのアクセスはどうですか？"
+      en: "How accessible is Suginami?"
+    a:
+      ja: "都心へのアクセスが良好です。高円寺から新宿まで約6分、荻窪から新宿まで約11分です。JR中央線、東京メトロ丸ノ内線など複数の路線が通っており、利便性が高いです。"
+      en: "Suginami offers excellent access to central Tokyo. From Koenji, it's about 6 minutes to Shinjuku, and from Ogikubo, about 11 minutes. Multiple train lines including JR Chuo Line and Tokyo Metro Marunouchi Line provide convenient transportation."
+
+# 既存スキーマとの互換性のため、以下も追加
+locale: ["en", "ja"]
+status: "Draft"
+tags:
+  - "suginami"
+  - "family-friendly"
+  - "green"
+  - "good-access"
+
+# 既存のcommute_times形式も追加（互換性のため） - SoTから反映
+commute_times:
+  - destination: "Shinjuku"
+    minutes: 6
+    type: "local"
+    line: "JR Chuo Line Rapid"
+    station: "Koenji"
+  - destination: "Shinjuku"
+    minutes: 11
+    type: "local"
+    line: "JR Chuo Line Rapid"
+    station: "Ogikubo"
+  - destination: "Shibuya"
+    minutes: 17
+    type: "local"
+    line: "JR Chuo Line"
+    station: "Koenji"
+  - destination: "Shibuya"
+    minutes: 25
+    type: "local"
+    line: "JR Chuo-Sobu Line"
+    station: "Ogikubo"
+  - destination: "Tokyo"
+    minutes: 20
+    type: "local"
+    line: "JR Chuo Line Rapid"
+    station: "Koenji"
+  - destination: "Tokyo"
+    minutes: 22
+    type: "local"
+    line: "JR Chuo Line Rapid"
+    station: "Ogikubo"
+  - destination: "Shinagawa"
+    minutes: 30
+    type: "local"
+    line: "JR Chuo-Sobu Line"
+    station: "Koenji"
+  - destination: "Shinagawa"
+    minutes: 37
+    type: "local"
+    line: "JR Chuo-Sobu Line"
+    station: "Ogikubo"
+
+# 既存のrent_by_type形式も追加（互換性のため） - SoTから反映
+rent_by_type:
+  quarter: "2025-Q1"
+  source: "homes.co.jp"
+  "1R":
+    avg: 81400
+  "1K":
+    avg: 95800
+  "1DK":
+    avg: 124300
+  "1LDK":
+    avg: 169700
+  "2K":
+    avg: 119900
+  "2DK":
+    avg: 144900
+  "2LDK":
+    avg: 232600
+  "3LDK":
+    avg: 281100
+
+# 既存のcta形式も追加（互換性のため）
+cta:
+  text:
+    ja: "杉並区の物件を探す"
+    en: "Search Properties in Suginami"
+  url: null
+  priority: "area_search"
+
+# 既存のsources形式も追加
+sources:
+  - name: "HOME'S"
+    url: "https://www.homes.co.jp/chintai/tokyo/suginami-city/"
+    type: "rent"
+  - name: "HOME'S"
+    url: "https://www.homes.co.jp/life/cl-trend/cm-ranking/70178/"
+    type: "commute"
+
+last_updated: "2025-02-05"

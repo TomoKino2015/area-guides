@@ -1,0 +1,81 @@
+slug: "chuo"
+
+title:
+  en: null
+  ja: null
+
+meta:
+  quarter: null
+  updatedAt: null
+  status: "Draft"
+
+tags: []
+
+overview:
+  en: null
+  ja: null
+
+who_it_fits:
+  en: []
+  ja: []
+
+subareas: []
+
+rent_by_type:
+  quarter: null
+  types:
+    - type: "1R"
+      avg: null
+      sample_size: null
+    - type: "1K"
+      avg: null
+      sample_size: null
+    - type: "1LDK"
+      avg: null
+      sample_size: null
+    - type: "2LDK"
+      avg: null
+      sample_size: null
+
+commute_times:
+  to_shinjuku:
+    line: null
+    local: null
+    express: null
+  to_shibuya:
+    line: null
+    local: null
+    express: null
+  to_tokyo:
+    line: null
+    local: null
+    express: null
+
+events: []
+
+faq: []
+
+cta:
+  primary:
+    text_en: null
+    text_ja: null
+    url: "/readiness"
+  secondary:
+    text_en: null
+    text_ja: null
+    url: "/areas"
+
+sources: []
+
+assets:
+  hero:
+    path: null
+    alt_en: null
+    alt_ja: null
+  map:
+    path: null
+    alt_en: null
+    alt_ja: null
+
+
+

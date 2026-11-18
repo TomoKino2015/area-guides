@@ -24,14 +24,11 @@ export function HeroSection({
       }}
     >
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-        {t(data.title)}
+        {t(data.name)}
       </h1>
       <p style={{ fontSize: "1rem", marginBottom: "1.5rem" }}>
-        {t(data.description)}
+        {t(data.tagline)}
       </p>
-      <div style={{ fontSize: "0.9rem", color: "#666", marginBottom: "1rem" }}>
-        {t(data.updatedAt)}
-      </div>
 
       <button
         onClick={() =>
