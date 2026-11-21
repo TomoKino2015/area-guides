@@ -70,3 +70,8 @@ export function ResidentVoicesSection({ language }: { language: Language }) {
 
 
 
+
+
+
+
+

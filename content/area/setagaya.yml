@@ -1,18 +1,85 @@
+slug: "setagaya"
+
+title:
+  en: "Setagaya"
+  ja: "世田谷区"
+
 locales:
   en:
-    title: "Setagaya Area Guide"
-    summary: null
+    title: "Setagaya"
+    summary: "Green, family-friendly, relaxed — close to central Tokyo without the chaos."
   ja:
-    title: "世田谷区エリアガイド"
-    summary: null
+    title: "世田谷区"
+    summary: "緑とカフェと子育ての街。都心すぎず郊外すぎないちょうどいい生活圏。"
 
 meta:
-  quarter: "2025-Q1"
+  quarter: null
   updatedAt: null
-  status: "Draft"
+  status: "Published"
 
-commute_times: {}
-rent_by_type: {}
+tags: []
+
+overview:
+  en: null
+  ja: null
+
+who_it_fits:
+  en: []
+  ja: []
+
+subareas: []
+
+rent_by_type:
+  quarter: "2025-Q1"
+  source: "homes.co.jp"
+  types:
+    - type: "1R"
+      avg: 100500
+      sample_size: null
+    - type: "1K"
+      avg: 103300
+      sample_size: null
+    - type: "1DK"
+      avg: 138000
+      sample_size: null
+    - type: "1LDK"
+      avg: 184000
+      sample_size: null
+    - type: "2K"
+      avg: 132600
+      sample_size: null
+    - type: "2DK"
+      avg: 198800
+      sample_size: null
+    - type: "2LDK"
+      avg: 255300
+      sample_size: null
+    - type: "3DK"
+      avg: 202100
+      sample_size: null
+    - type: "3LDK"
+      avg: 302300
+      sample_size: null
+
+commute_times:
+  to_shinjuku:
+    line: null
+    local: null
+    express: null
+  to_shibuya:
+    line: null
+    local: null
+    express: null
+  to_tokyo:
+    line: null
+    local: null
+    express: null
+
+events: []
+
+faq: []
+
+sources: []
 cta:
   primary:
     text_en: "Readiness Check"
@@ -22,4 +89,27 @@ cta:
     text_en: "Search by area"
     text_ja: "エリアから探す"
     url: "/areas"
+
+# 画像アセットのメタデータ（BMAD METHOD準拠）
+# TODO: 既存画像を整理し、命名規則に従って配置・登録する
+assets:
+  hero:
+    path: "/images/setagaya/setagaya-hero.jpg"  # TODO: 画像ファイルを配置
+    alt:
+      en: "Setagaya Ward overview"
+      ja: "世田谷区の概要"
+  map:
+    path: "/images/setagaya-map.png"  # 既存画像（移行前の暫定パス）
+    alt:
+      en: "Setagaya Ward map"
+      ja: "世田谷区マップ"
+  gallery:
+    - path: "/images/shimokitazawa.webp"  # 既存画像（移行前の暫定パス）
+      alt:
+        en: "Shimokitazawa shopping street"
+        ja: "下北沢の商店街"
+    - path: "/images/futakotamagawa.webp"  # 既存画像（移行前の暫定パス）
+      alt:
+        en: "Futakotamagawa riverside"
+        ja: "二子玉川の多摩川沿い"
 
