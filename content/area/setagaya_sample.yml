@@ -1,0 +1,389 @@
+slug: "setagaya_sample"
+
+title:
+  ja: "世田谷区エリアガイド（サンプル）"      # G1-② ベーステキストからAI整形
+  en: "Setagaya Area Guide (Sample)"          # G1-②
+
+meta:
+  quarter: "2025-Q1"                          # G1-③ 人間が決める
+  updated_at: "2025-02-01"                    # G1-③
+  reading_time_minutes: 5                     # G1-① or ③（自動推定でもOK）
+  status: "Published"
+
+hero:
+  tagline:
+    ja: "緑とカフェと子育ての街。都心すぎず郊外すぎないちょうどいい生活圏。" # G1-②
+    en: "Green, family-friendly, relaxed — close to central Tokyo without the chaos."           # G1-②
+  lead:
+    ja: |
+      東京23区の南西部に位置する世田谷区。都会の利便性と郊外の静けさが理想的に融合したエリアです。
+      特に三軒茶屋、下北沢、二子玉川、成城学園前の4大エリアは、それぞれ異なる魅力を持ち、
+      若手ビジネスパーソンからクリエイター、外国人居住者まで、多様な人々を惹きつけています。  # G1-② 既存テキストを要約
+    en: |
+      Setagaya sits on the west side of Tokyo's 23 wards, offering an ideal fusion of urban convenience and suburban serenity.
+      Four major areas—Sangenjaya, Shimokitazawa, Futako-Tamagawa, and Seijo-Gakuen-mae—each have their own unique charm,
+      attracting diverse residents from young professionals to creatives and international residents.  # G1-②
+
+assets:
+  hero:
+    path: "/images/setagaya-map.png"  # G1-③ 既存画像を使用
+    alt:
+      ja: "世田谷区の街並み（サンプル）"             # G1-②
+      en: "Setagaya cityscape (sample)"           # G1-②
+  map:
+    path: "/images/setagaya-map.png"   # G1-③ 既存画像を使用
+    alt:
+      ja: "世田谷区マップ（サンプル）"               # G1-②
+      en: "Map of Setagaya (sample)"              # G1-②
+
+who_it_fits:
+  tags:                       # G2-① ラベル
+    - "都心アクセス良好"
+    - "緑豊かな環境"
+    - "家族向け環境"
+    - "国際的な環境"
+  description:
+    ja: |                     # G2-②
+      若手ビジネスパーソンからクリエイター、子育てファミリーまで、
+      幅広いライフスタイルに対応できるエリアです。
+      都心へのアクセスが良く、緑豊かな環境と個性的な街の文化が魅力です。
+    en: |
+      From young professionals to creators and families with children,
+      Setagaya accommodates diverse lifestyles.
+      Its excellent access to central Tokyo, green environment, and unique neighborhood culture are major draws.
+  sample_residents:           # G2-①/② フィクションの住民声（2件程度）
+    - name: "Sarah"
+      profile_ja: "三軒茶屋在住・28歳・IT企業勤務"
+      profile_en: "Lives in Sangenjaya, 28, works in IT"
+      quote_ja: "渋谷まで10分という便利さが決め手でした。緑も多くて、週末は散歩が楽しめます。"
+      quote_en: "Being just 10 minutes from Shibuya was the key for me. There's plenty of greenery, and I love walking on weekends."
+    - name: "Tom"
+      profile_ja: "下北沢在住・35歳・デザイナー"
+      profile_en: "Lives in Shimokitazawa, 35, designer"
+      quote_ja: "クリエイティブな雰囲気と、子育てしやすい環境が気に入っています。"
+      quote_en: "I love the creative atmosphere and the family-friendly environment."
+
+subareas:
+  - id: "sangenjaya"
+    name:
+      ja: "三軒茶屋"                 # G3-③ 固有名詞
+      en: "Sangenjaya"
+    description:
+      ja: "田園都市線と世田谷線が交わる若者文化の拠点。飲食店が豊富で、夜も賑やかなエリアです。渋谷まで10分、新宿まで25分の好立地。"  # G3-②
+      en: "A lively hub where Den-en-toshi and Setagaya lines meet. Rich in dining options, vibrant even at night. Just 10 minutes to Shibuya, 25 minutes to Shinjuku."
+    highlights:
+      - "交通至便"
+      - "飲食店が豊富"
+      - "若者文化の中心"
+    cons:
+      - "駅周辺が賑やかで家賃高め"
+    hero_image:
+      path: "/images/shimokitazawa.webp"   # G3-③ 既存画像を使用
+      alt:
+        ja: "三軒茶屋の街並み（サンプル）"                # G3-②
+        en: "Sangenjaya streets (sample)"                 # G3-②
+  - id: "shimokitazawa"
+    name:
+      ja: "下北沢"
+      en: "Shimokitazawa"
+    description:
+      ja: "個性的な店が並ぶサブカルチャーの発信地。古着屋、ライブハウス、カフェが集まり、クリエイティブな雰囲気が魅力です。"
+      en: "A hub of subculture with unique shops. Vintage clothing stores, live music venues, and cafes create a creative atmosphere."
+    highlights:
+      - "サブカルチャーの中心"
+      - "古着・ライブハウス"
+      - "クリエイティブな雰囲気"
+    hero_image:
+      path: "/images/shimokitazawa.webp"
+      alt:
+        ja: "下北沢の商店街"
+        en: "Shimokitazawa shopping street"
+  - id: "futakotamagawa"
+    name:
+      ja: "二子玉川"
+      en: "Futako-Tamagawa"
+    description:
+      ja: "都会と自然が調和する住環境。二子玉川ライズなどの大型商業施設と多摩川の自然が共存しています。"
+      en: "Where urban living meets nature. Large commercial facilities like Futako-Tamagawa Rise coexist with the Tamagawa River's natural beauty."
+    highlights:
+      - "大型商業施設"
+      - "自然環境"
+      - "ファミリー向け"
+    hero_image:
+      path: "/images/futakotamagawa.webp"
+      alt:
+        ja: "二子玉川の多摩川沿い"
+        en: "Futakotamagawa riverside"
+
+money_and_access:
+  # サブエリア別の賃料・分数・年収目安（G4-③）
+  subarea_rent_table:
+    data_source: null          # G4-③ SUUMO/HOME'SのURLなどを人間が埋める
+    rows:
+      - subarea_id: "sangenjaya"
+        rent_min_man: 13       # G4-③
+        rent_max_man: 16       # G4-③
+        to_shinjuku_minutes: 25  # G4-③
+        to_shibuya_minutes: 10   # G4-③
+        income_hint_man: 500     # G4-③ (年収目安)
+      - subarea_id: "shimokitazawa"
+        rent_min_man: 12
+        rent_max_man: 15
+        to_shinjuku_minutes: 15
+        to_shibuya_minutes: 7
+        income_hint_man: 470
+      - subarea_id: "futakotamagawa"
+        rent_min_man: 13
+        rent_max_man: 16
+        to_shinjuku_minutes: 35
+        to_shibuya_minutes: 20
+        income_hint_man: 500
+  # 区全体の間取り別賃料（G4-③）
+  unit_rent_stats:
+    quarter: "2025-Q1"         # G4-③
+    source: "homes.co.jp"
+    rows:
+      - type: "1R"
+        avg_rent_jpy: 100500   # G4-③ SoTから反映（10.05万円 → 100500円）
+        avg_size_sqm: 25.2     # G4-③
+        note_ja: "単身者向け・コンパクト設計"  # G4-②
+        note_en: "For singles, compact design"
+      - type: "1K"
+        avg_rent_jpy: 103300   # G4-③ SoTから反映（10.33万円 → 103300円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "効率的な空間利用"
+        note_en: "Efficient space utilization"
+      - type: "1DK"
+        avg_rent_jpy: 138000   # G4-③ SoTから反映（13.80万円 → 138000円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "コンパクトなダイニング付き"
+        note_en: "Compact with dining area"
+      - type: "1LDK"
+        avg_rent_jpy: 184000   # G4-③ SoTから反映（18.40万円 → 184000円）
+        avg_size_sqm: 40.6     # G4-③
+        note_ja: "カップル向け・広めのリビング"  # G4-②
+        note_en: "For couples, spacious living room"
+      - type: "2K"
+        avg_rent_jpy: 132600   # G4-③ SoTから反映（13.26万円 → 132600円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "2部屋タイプ"
+        note_en: "Two-room type"
+      - type: "2DK"
+        avg_rent_jpy: 198800   # G4-③ SoTから反映（19.88万円 → 198800円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "ダイニング付き2部屋"
+        note_en: "Two rooms with dining area"
+      - type: "2LDK"
+        avg_rent_jpy: 255300   # G4-③ SoTから反映（25.53万円 → 255300円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "ファミリー向け・広々リビング"
+        note_en: "For families, spacious living area"
+      - type: "3DK"
+        avg_rent_jpy: 202100   # G4-③ SoTから反映（20.21万円 → 202100円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "ダイニング付き3部屋"
+        note_en: "Three rooms with dining area"
+      - type: "3LDK"
+        avg_rent_jpy: 302300   # G4-③ SoTから反映（30.23万円 → 302300円）
+        avg_size_sqm: null     # G4-③
+        note_ja: "ファミリー向け・広々リビング"
+        note_en: "For families, spacious living area"
+  # CTA（URLはG4-③、文言はG4-①）
+  cta:
+    primary:
+      label_ja: "世田谷区の物件一覧を見る"   # G4-①
+      label_en: "View listings in Setagaya"  # G4-①
+      url: null                              # G4-③ ← 人間が入れる
+    secondary:
+      label_ja: "Eligibility Checkを試してみる"  # G4-①
+      label_en: "Try Eligibility Check"         # G4-①
+      url: "/readiness"                       # G4-③
+
+life:
+  shopping:
+    summary_ja: "世田谷区は大型ショッピングモールから個性的な商店街まで、多様な買い物環境が整っています。"  # G5-②
+    summary_en: "Setagaya offers diverse shopping options, from large malls to unique shopping streets."
+    spots:             # G5-③ 固有名詞＋G5-② テキストの混在
+      - name: "キャロットタワー"
+        type: "shopping"
+        note_ja: "展望フロアと図書館を備えた地域ランドマーク"  # G5-②
+        note_en: "A local landmark with an observatory and library."
+      - name: "二子玉川ライズ"
+        type: "shopping"
+        note_ja: "大型商業施設と自然が調和する複合施設"  # G5-②
+        note_en: "A complex where large commercial facilities harmonize with nature."
+  dining:
+    summary_ja: "三軒茶屋や下北沢を中心に、多様な飲食店が充実しています。"  # G5-②
+    summary_en: "Diverse dining options centered around Sangenjaya and Shimokitazawa."
+    spots:
+      - name: "三軒茶屋 商店街"
+        type: "dining"
+        note_ja: "老舗から新店まで、幅広い選択肢"  # G5-②
+        note_en: "Wide range from established shops to new restaurants."
+      - name: "下北沢カレー"
+        type: "dining"
+        note_ja: "個性的なカレー店が集まる食のエリア"  # G5-②
+        note_en: "Area known for unique curry restaurants."
+  parks:
+    summary_ja: "等々力渓谷や砧公園など、自然豊かな公園が点在しています。"  # G5-②
+    summary_en: "Green parks like Todoroki Valley and Kinuta Park dot the area."
+    spots:
+      - name: "等々力渓谷"
+        type: "park"
+        note_ja: "都心にありながら自然を満喫できる貴重なスポット"  # G5-②
+        note_en: "A rare spot to enjoy nature in the heart of the city."
+      - name: "砧公園"
+        type: "park"
+        note_ja: "広大な芝生広場と桜の名所"  # G5-②
+        note_en: "Expansive lawn areas and famous cherry blossom spot."
+  education_and_medical:
+    summary_ja: "インターナショナルスクールや総合病院など、教育・医療環境が充実しています。"  # G5-②
+    summary_en: "Well-equipped with international schools and general hospitals."
+    spots:
+      - name: "セントメアリーズインターナショナルスクール"
+        type: "education"
+        note_ja: "国際的な教育環境"  # G5-②
+        note_en: "International educational environment"
+      - name: "東京医療センター"
+        type: "medical"
+        note_ja: "英語・中国語対応の医療施設"  # G5-②
+        note_en: "Medical facility with English and Chinese support"
+
+foreign_friendly:
+  summary_ja: "外国人居住者向けのサポートが充実しており、英語対応のサービスも増えています。"  # G6-②
+  summary_en: "Well-supported for foreign residents with increasing English-language services."
+  bullets_ja:  # G6-① or ②
+    - "外国人向け物件の紹介サービス"
+    - "英語対応の医療機関"
+    - "国際コミュニティのイベント"
+    - "インターナショナルスクールが充実"
+  bullets_en:
+    - "Property introduction services for foreigners"
+    - "English-speaking medical facilities"
+    - "International community events"
+    - "Well-equipped international schools"
+
+events:
+  # イベントの「箱」だけ持つ。詳細はゆるめでOK。
+  items:
+    - id: "setagaya-boroichi"
+      name:
+        ja: "世田谷ボロ市"          # G7-③ 固有名詞
+        en: "Setagaya Boroichi"
+      month: 1                        # G7-③
+      description:
+        ja: "400年以上の歴史を持つ伝統的な市。古着や骨董品などが並びます。"  # G7-②
+        en: "A traditional market with over 400 years of history, featuring vintage clothing and antiques."
+      hero_image:
+        path: "/images/shimokitazawa.webp"  # G7-③ 既存画像を使用
+        alt:
+          ja: "世田谷ボロ市の様子（サンプル）"           # G7-②
+          en: "Setagaya Boroichi scene (sample)"
+    - id: "sakura-nebuta"
+      name:
+        ja: "桜新町ねぶた祭り"
+        en: "Sakura-Shinmachi Nebuta Festival"
+      month: 8
+      description:
+        ja: "青森の伝統的なねぶた祭りを東京で体験できる貴重なイベント。"
+        en: "Experience Aomori's traditional Nebuta Festival in Tokyo."
+    - id: "sancha-daidogei"
+      name:
+        ja: "三茶de大道芸"
+        en: "Sancha Street Performance Festival"
+      month: 10
+      description:
+        ja: "国内外のパフォーマーによる大道芸が三軒茶屋の街中で繰り広げられます。"
+        en: "Street performers from Japan and abroad showcase their talents throughout Sangenjaya."
+
+closing:
+  text_ja: "あなたにぴったりの物件を探しましょう！"  # G7-①
+  text_en: "Let's find a home that fits you."            # G7-①
+  extra_links:
+    - label_ja: "路線で検索したい方はこちら"          # G7-①
+      label_en: "Search by train line"                  # G7-①
+      url: null                                         # G7-③
+      line_ids: ["denentoshi", "odakyu"]                # G7-③ or ①
+
+# FAQ（G7）
+faq:
+  - q:
+      ja: "世田谷区は外国人に優しいですか？"
+      en: "Is Setagaya foreigner-friendly?"
+    a:
+      ja: "はい、世田谷区は外国人居住者に優しい環境が整っています。英語対応の医療機関、インターナショナルスクール、外国人向け物件紹介サービスなどが充実しています。"
+      en: "Yes, Setagaya offers a welcoming environment for foreign residents with English-speaking medical facilities, international schools, and property introduction services for foreigners."
+  - q:
+      ja: "世田谷区の平均賃料はどのくらいですか？"
+      en: "What is the average rent in Setagaya?"
+    a:
+      ja: "間取りによって異なりますが、2025年Q1時点では、1Rが約10.05万円、1LDKが約18.40万円、2LDKが約25.53万円となっています。サブエリアによっても変動があります。"
+      en: "Rent varies by floor plan. As of Q1 2025, average rents are approximately ¥100,500 for 1R, ¥184,000 for 1LDK, and ¥255,300 for 2LDK. Prices also vary by subarea."
+  - q:
+      ja: "世田谷区へのアクセスはどうですか？"
+      en: "How accessible is Setagaya?"
+    a:
+      ja: "都心へのアクセスが良好です。三軒茶屋から渋谷まで約10分、新宿まで約25分です。田園都市線、小田急線、東急世田谷線など複数の路線が通っており、利便性が高いです。"
+      en: "Setagaya offers excellent access to central Tokyo. From Sangenjaya, it's about 10 minutes to Shibuya and 25 minutes to Shinjuku. Multiple train lines including Den-en-toshi Line, Odakyu Line, and Tokyu Setagaya Line provide convenient transportation."
+
+# 既存スキーマとの互換性のため、以下も追加
+locale: ["en", "ja"]
+status: "Published"
+tags:
+  - "setagaya"
+  - "sample"
+  - "family-friendly"
+  - "green"
+
+# 既存のcommute_times形式も追加（互換性のため）
+commute_times:
+  - destination: "Shibuya"
+    minutes: 10
+    type: "local"
+    line: "Tokyu Den-en-toshi Line"
+  - destination: "Shinjuku"
+    minutes: 25
+    type: "local"
+    line: "Odakyu Line"
+
+# 既存のrent_by_type形式も追加（互換性のため）
+rent_by_type:
+  quarter: "2025-Q1"
+  source: "homes.co.jp"
+  "1R":
+    avg: 100500
+  "1K":
+    avg: 103300
+  "1DK":
+    avg: 138000
+  "1LDK":
+    avg: 184000
+  "2K":
+    avg: 132600
+  "2DK":
+    avg: 198800
+  "2LDK":
+    avg: 255300
+  "3DK":
+    avg: 202100
+  "3LDK":
+    avg: 302300
+
+# 既存のcta形式も追加（互換性のため）
+cta:
+  text:
+    ja: "世田谷区の物件を探す"
+    en: "Search Properties in Setagaya"
+  url: null
+  priority: "area_search"
+
+# 既存のsources形式も追加
+sources:
+  - name: "SUUMO"
+    url: null
+    type: "rent"
+  - name: "HOME'S"
+    url: null
+    type: "rent"
+
+last_updated: "2025-02-01"
