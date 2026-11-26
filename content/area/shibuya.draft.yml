@@ -1,47 +1,238 @@
-# 拡張候補：既存 shibuya.yml に追加する項目のドラフト
-# 未確定値は null。公開前に既存ファイルとマージ判断。
+slug: "shibuya"
 
-locales:
-  en:
-    title: "Shibuya Area Guide"
-    summary: null
-  ja:
-    title: "渋谷エリアガイド"
-    summary: null
+title:
+  en: "Shibuya"
+  ja: "渋谷区"
 
-meta:
-  quarter: "2025-Q1"
-  updatedAt: null
-  status: "Draft"
+locale: ["en", "ja"]
 
-commute_times:
-  to_shinjuku:
-    local: null
-    express: null
-  to_shibuya:
-    local: null
-    express: null
+status: "Published"
+
+subtitle:
+  en: "Tokyo's Cultural Intersection of Fashion, Entertainment, and Innovation"
+  ja: "ファッション、エンターテイメント、イノベーションが交差する東京の文化的中心地"
 
 rent_by_type:
   quarter: "2025-Q1"
-  types:
-    - type: "1R"
-      avg: null
-      sample_size: null
-    - type: "1K"
-      avg: null
-      sample_size: null
-    - type: "1LDK"
-      avg: null
-      sample_size: null
+  "1K":
+    min: 110000
+    max: 180000
+    typical: 130600
+  "1LDK":
+    min: 180000
+    max: 300000
+    typical: 228800
+  "2LDK":
+    min: 280000
+    max: 450000
+    typical: 340000
+  "3LDK":
+    min: 400000
+    max: 650000
+    typical: 500000
+
+commute_times:
+  - destination: "Shinjuku"
+    minutes: 5
+    type: "express"
+    line: "JR Yamanote Line"
+  - destination: "Shinjuku"
+    minutes: 7
+    type: "local"
+    line: "JR Yamanote Line"
+  - destination: "Tokyo Station"
+    minutes: 15
+    type: "express"
+    line: "JR Yamanote Line"
+  - destination: "Roppongi"
+    minutes: 12
+    type: "local"
+    line: "Tokyo Metro Hanzomon Line"
+  - destination: "Harajuku"
+    minutes: 2
+    type: "local"
+    line: "JR Yamanote Line"
+
+subareas:
+  - name:
+      en: "Daikanyama"
+      ja: "代官山"
+    description:
+      en: "A chic neighborhood known for stylish boutiques, trendy cafes, and a sophisticated atmosphere. Popular among young professionals and fashion enthusiasts."
+      ja: "洗練されたブティック、トレンディなカフェ、上品な雰囲気で知られるおしゃれなエリア。若いプロフェッショナルやファッション愛好家に人気。"
+    highlights:
+      - "Fashion boutiques"
+      - "Trendy cafes"
+      - "Laid-back atmosphere"
+  - name:
+      en: "Ebisu"
+      ja: "恵比寿"
+    description:
+      en: "An upscale area featuring Yebisu Garden Place, gourmet dining, and rooftop bars. Ideal for food lovers and young professionals seeking an elegant urban lifestyle."
+      ja: "恵比寿ガーデンプレイス、グルメレストラン、ルーフトップバーを備えた高級エリア。美食家や洗練された都市生活を求める若いプロフェッショナルに最適。"
+    highlights:
+      - "Yebisu Garden Place"
+      - "Gourmet dining"
+      - "Rooftop bars"
+  - name:
+      en: "Sendagaya"
+      ja: "千駄ヶ谷"
+    description:
+      en: "A unique blend of sports facilities, cultural landmarks, and residential tranquility. Known for its proximity to major sports venues and cultural sites."
+      ja: "スポーツ施設、文化的ランドマーク、住宅の静けさが融合した独特なエリア。主要なスポーツ会場や文化施設への近さで知られる。"
+    highlights:
+      - "Sports facilities"
+      - "Cultural landmarks"
+      - "Residential tranquility"
+  - name:
+      en: "Omotesando"
+      ja: "表参道"
+    description:
+      en: "Often called Tokyo's Champs-Élysées, featuring luxury boutiques, art galleries, and stunning architecture. A fashionable district attracting both locals and tourists."
+      ja: "東京のシャンゼリゼとも呼ばれ、高級ブティック、アートギャラリー、美しい建築が特徴。地元の人々と観光客の両方を魅了するファッショナブルな地区。"
+    highlights:
+      - "Luxury shopping"
+      - "Art galleries"
+      - "Architectural landmarks"
+  - name:
+      en: "Yoyogi"
+      ja: "代々木"
+    description:
+      en: "A peaceful neighborhood with Yoyogi Park and Meiji Shrine nearby. Offers a tranquil retreat from the bustling city center while maintaining excellent accessibility."
+      ja: "代々木公園と明治神宮に近い静かなエリア。都心の喧騒から離れた静かな避難所を提供しながら、優れたアクセス性を維持。"
+    highlights:
+      - "Yoyogi Park"
+      - "Meiji Shrine"
+      - "Green spaces"
+
+overview:
+  en: "Shibuya is one of Tokyo's most iconic and dynamic districts, where modern urban life meets cultural innovation. Known globally for its high-energy atmosphere, Shibuya serves as the heartbeat of fashion, entertainment, dining, and art. The area offers a lifestyle that is as diverse as it is exciting, making it a prime location to live, work, and thrive."
+  ja: "渋谷は東京で最も象徴的でダイナミックな地区の一つで、現代的な都市生活と文化的イノベーションが交差する場所です。世界的に知られる高エネルギーな雰囲気で、ファッション、エンターテイメント、ダイニング、アートの中心地として機能しています。多様で刺激的なライフスタイルを提供し、住み、働き、繁栄するための理想的な場所です。"
+
+who_it_fits:
+  en:
+    - "Young professionals seeking vibrant urban lifestyle"
+    - "Fashion and culture enthusiasts"
+    - "Food lovers and nightlife seekers"
+    - "Creative professionals and artists"
+    - "International residents looking for central Tokyo access"
+  ja:
+    - "活気ある都市生活を求める若いプロフェッショナル"
+    - "ファッションと文化愛好家"
+    - "美食家とナイトライフを楽しむ人"
+    - "クリエイティブなプロフェッショナルとアーティスト"
+    - "都心へのアクセスを求める外国人居住者"
+
+shopping_dining:
+  en: "Shibuya offers world-class dining options ranging from Michelin-starred restaurants like L'Effervescence and Narisawa to casual eateries and high-tech conveyor belt sushi. The area is also home to numerous cafes, craft cocktail bars, and international supermarkets. Nonbei Yokocho provides an authentic Tokyo nightlife experience with its traditional bars."
+  ja: "渋谷は、L'EffervescenceやNarisawaなどのミシュラン星付きレストランからカジュアルな飲食店、ハイテク回転寿司まで、世界クラスのダイニングオプションを提供しています。また、数多くのカフェ、クラフトカクテルバー、国際スーパーマーケットもあります。飲んべえ横丁は伝統的なバーで本格的な東京のナイトライフ体験を提供します。"
+
+schools_healthcare:
+  en: "Shibuya is home to several renowned educational institutions including the British School in Tokyo, Aoyama Gakuin University, and language schools like Shibuya Gaigo Gakuin. Healthcare services are well-catered with clinics like Hiroo International Clinic and hospitals such as Tokyo Metropolitan Hiroo Hospital providing excellent medical care."
+  ja: "渋谷には、ブリティッシュスクール・イン・トーキョー、青山学院大学、渋谷外語学院などの言語学校など、いくつかの有名な教育機関があります。医療サービスは、広尾インターナショナルクリニックや東京都立広尾病院などの病院が優れた医療を提供しており、充実しています。"
+
+parks:
+  en: "For outdoor enthusiasts, parks such as Yoyogi Park, Miyashita Park, and Shoto Park provide green spaces to relax and enjoy nature. Yoyogi Park is particularly popular for its spacious grounds and proximity to Meiji Shrine."
+  ja: "アウトドア愛好家には、代々木公園、宮下公園、松濤公園などの公園が、リラックスして自然を楽しむための緑地を提供しています。代々木公園は特に広々とした敷地と明治神宮への近さで人気です。"
+
+events:
+  - name:
+      en: "Shibuya Hikarie Bon Dance"
+      ja: "渋谷ヒカリエ盆踊り"
+    month: "August"
+    description:
+      en: "Traditional bon dance festival held in August, bringing the community together for a festive celebration."
+      ja: "8月に開催される伝統的な盆踊り祭りで、コミュニティを集めて祝祭的なお祝いを行います。"
+  - name:
+      en: "Shibuya Halloween Celebration"
+      ja: "渋谷ハロウィン"
+    month: "October"
+    description:
+      en: "One of Tokyo's most famous Halloween celebrations, attracting crowds from across the city for an unforgettable night of costumes and festivities."
+      ja: "東京で最も有名なハロウィン祝祭の一つで、コスチュームと祝祭の忘れられない夜のために市内全域から人々を集めます。"
+  - name:
+      en: "Shibuya New Year's Eve Countdown"
+      ja: "渋谷カウントダウン"
+    month: "December"
+    description:
+      en: "A major New Year's Eve event drawing crowds from across the city for an unforgettable celebration."
+      ja: "市内全域から人々を集め、忘れられないお祝いを行う大規模な大晦日イベント。"
+
+faq:
+  - q:
+      en: "Is Shibuya foreigner-friendly?"
+      ja: "渋谷は外国人に優しいですか？"
+    a:
+      en: "Yes, Shibuya is very foreigner-friendly. Many buildings allow foreign tenants, and English support is available through various services. The area has a significant international population and numerous international schools and clinics."
+      ja: "はい、渋谷は非常に外国人に優しいです。多くの建物が外国人入居者を許可しており、さまざまなサービスを通じて英語サポートが利用できます。このエリアには多くの国際人口と数多くのインターナショナルスクールやクリニックがあります。"
+  - q:
+      en: "What is the average rent range in Shibuya?"
+      ja: "渋谷の平均賃料範囲は？"
+    a:
+      en: "Rent prices vary by neighborhood and property type. Studio apartments average around ¥130,600, 1LDK units around ¥228,800, and 2LDK units around ¥340,000. Prices can be higher in premium areas like Daikanyama and Omotesando."
+      ja: "賃料はエリアと物件タイプによって異なります。スタジオアパートは平均約13万600円、1LDKは約22万8800円、2LDKは約34万円です。代官山や表参道などの高級エリアでは価格が高くなる場合があります。"
+  - q:
+      en: "How accessible is Shibuya by public transportation?"
+      ja: "渋谷への公共交通機関でのアクセスは？"
+    a:
+      en: "Shibuya is extremely accessible, serving as a major transit hub. It's connected via JR Yamanote Line, Tokyo Metro lines (Hanzomon, Ginza, Fukutoshin), and Keio Inokashira Line. Major destinations like Shinjuku are just 5 minutes away by express train."
+      ja: "渋谷は非常にアクセスが良く、主要な交通ハブとして機能しています。JR山手線、東京メトロ線（半蔵門、銀座、副都心）、京王井の頭線で接続されています。新宿などの主要目的地へは急行でわずか5分です。"
 
 cta:
-  primary:
-    text_en: "Check eligibility"
-    text_ja: "Readiness Check"
-    url: "/readiness"
-  secondary:
-    text_en: "Search by area"
-    text_ja: "エリアから探す"
-    url: "/areas"
+  text:
+    en: "Search Properties in Shibuya"
+    ja: "渋谷の物件を探す"
+  url: "/search"
+  priority: "area_search"
 
+assets:
+  - type: "hero"
+    filename: "shibuya.jpg"
+    alt:
+      en: "Shibuya Scramble Crossing and cityscape"
+      ja: "渋谷スクランブル交差点と街並み"
+  - type: "subarea"
+    filename: "daikanyama.webp"
+    alt:
+      en: "Daikanyama neighborhood"
+      ja: "代官山エリア"
+  - type: "subarea"
+    filename: "omotesando.webp"
+    alt:
+      en: "Omotesando shopping street"
+      ja: "表参道ショッピングストリート"
+  - type: "park"
+    filename: "yoyogi-park.webp"
+    alt:
+      en: "Yoyogi Park"
+      ja: "代々木公園"
+
+sources:
+  - name: "SUUMO"
+    url: "https://suumo.jp"
+    type: "rent"
+  - name: "HOME'S"
+    url: "https://www.homes.co.jp"
+    type: "rent"
+  - name: "JR East"
+    url: "https://www.jreast.co.jp"
+    type: "commute"
+  - name: "Tokyo Metro"
+    url: "https://www.tokyometro.jp"
+    type: "commute"
+  - name: "Shibuya City Official"
+    url: "https://www.city.shibuya.tokyo.jp"
+    type: "general"
+
+last_updated: "2025-01-15"
+
+tags:
+  - "shibuya"
+  - "tokyo"
+  - "living"
+  - "commute-30m"
+  - "fashion"
+  - "entertainment"
+  - "dining"
+  - "nightlife"
+  - "central-tokyo"
