@@ -171,6 +171,14 @@
         "ja": { "type": "string" }
       }
     },
+    "lifestyle": {
+      "type": "object",
+      "description": "Comprehensive lifestyle information combining shopping, dining, parks, education, and healthcare",
+      "properties": {
+        "en": { "type": "string" },
+        "ja": { "type": "string" }
+      }
+    },
     "shopping_dining": {
       "type": "object",
       "description": "Shopping and dining info by locale",
@@ -247,25 +255,75 @@
       }
     },
     "assets": {
-      "type": "array",
-      "description": "Image assets (optional)",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "enum": ["hero", "subarea", "park", "event"],
-            "description": "Asset category"
-          },
-          "filename": { "type": "string" },
-          "alt": {
+      "type": "object",
+      "description": "Image assets metadata (optional). All images must be registered here before use.",
+      "properties": {
+        "hero": {
+          "type": "object",
+          "description": "Hero image for the area landing page",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Image path relative to public directory (e.g., '/images/shibuya/shibuya-hero.jpg')"
+            },
+            "alt": {
+              "type": "object",
+              "description": "Alt text for accessibility",
+              "properties": {
+                "en": { "type": "string" },
+                "ja": { "type": "string" }
+              }
+            }
+          }
+        },
+        "map": {
+          "type": "object",
+          "description": "Area map image",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Image path (e.g., '/images/shibuya/shibuya-map.png')"
+            },
+            "alt": {
+              "type": "object",
+              "properties": {
+                "en": { "type": "string" },
+                "ja": { "type": "string" }
+              }
+            }
+          }
+        },
+        "gallery": {
+          "type": "array",
+          "description": "Gallery images for photo highlights section",
+          "items": {
             "type": "object",
             "properties": {
-              "en": { "type": "string" },
-              "ja": { "type": "string" }
+              "path": {
+                "type": "string",
+                "description": "Image path (e.g., '/images/shibuya/shibuya-gallery-01.webp')"
+              },
+              "alt": {
+                "type": "object",
+                "description": "Alt text for accessibility",
+                "properties": {
+                  "en": { "type": "string" },
+                  "ja": { "type": "string" }
+                }
+              },
+              "caption": {
+                "type": "object",
+                "description": "Optional caption text",
+                "properties": {
+                  "en": { "type": "string" },
+                  "ja": { "type": "string" }
+                }
+              }
             }
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "sources": {
       "type": "array",
